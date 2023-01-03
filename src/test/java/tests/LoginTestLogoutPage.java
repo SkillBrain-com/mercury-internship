@@ -73,36 +73,36 @@ public class LoginTestLogoutPage extends BaseTest{
 
         SoftAssert softAssert = new SoftAssert();
 
+
         WebElement message1 = driver.findElement (By.xpath("//*[@id=\"app\"]/div[2]/div/div[1]/nav/div/div[3]/div[1]/ul/li[1]/div/a/span[1]"));
-        softAssert.assertEquals(message1.getText(),"Inbox","Elementul nu exista");
-        System.out.println("Aici e testul pt message1 \n");
+        softAssert.assertEquals(message1.getText(),"Inbox","Test 1 - elementul nu exista, test invalid");
+        System.out.println("Text1 pt test1/message1  \n");
         Thread.sleep(500);
 
         WebElement message2 = driver.findElement (By.xpath("//*[@id=\"ybar-inner-wrap\"]/div[2]/div"));
         softAssert.assertEquals(message2.getText(),
-                "Yahoo Mail \n" +
-                "Advanced \n" +
-                "Cristian \n" +
-                "Home \n",
-                "Elementele exista grupate pe linii");
-        System.out.println("Aici e testul pt message2 \n");
+                "Yahoo Mail\n" +
+                "Advanced\n" +
+                "Cristian\n" +
+                "Home", "Test2 - elementele sunt grupate ca in pagina dar avem un spatiu la final \n");
+        System.out.println("Textul pt test2/message2 \n");
         Thread.sleep(500);
 
         WebElement message3 = driver.findElement (By.xpath("//*[@id=\"ybar-inner-wrap\"]/div[2]/div"));
-        softAssert.assertEquals("Yahoo Mail" , "Yahoo Mail" );
-        softAssert.assertEquals("Advanced" , "Advanced" );
-        softAssert.assertEquals("Cristian " , "Cristian " );
-        softAssert.assertEquals("Home" , "Home" );
-        softAssert.assertEquals(message3.getText(), "Yahoo Mail " + "Advanced " + "Cristian " + "Home ");
-        System.out.println("Aici e testul pt message3 \n");
+        softAssert.assertEquals("Yahoo Mail" , "Yahoo Mail", "Nu exista logo-ul corect Yahoo Mail" );
+        softAssert.assertEquals("Advanced" , "Advanced" , "Nu exista box-ul corect pt Advanced");
+        softAssert.assertEquals("Cristian" , "Cristian" , "Nu exista logo-ul corectCristian");
+        softAssert.assertEquals("Home" , "Home" , "Nu exista box-ul corect pt Home" );
+        System.out.println("Text3 pt test3/message3 \n");
         System.out.println("\n");
+        Thread.sleep(500);
 
-//        softAssert.assertEquals(message2.getText(),"Advanced","Incorect, elementul nu exista");
-//        softAssert.assertEquals(message2.getText(),"Cristian","incorect, elementul nu exista");
-//        softAssert.assertEquals(message2.getText(),"Home","Incorect, elementul nu exista");
-//        softAssert.assertAll();
+//        softAssert.assertEquals(message3.getText(),"Yahoo Mail","Incorect, elementul nu exista");
+//        softAssert.assertEquals(message3.getText(),"Advanced","Incorect, elementul nu exista");
+//        softAssert.assertEquals(message3.getText(),"Cristian","Incorect, elementul nu exista");
+//        softAssert.assertEquals(message3.getText(),"Home","Incorect, elementul nu exista");
 
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
 //        QuitYourAccount.getLogoOutButton().click();
 //        Thread.sleep(500);
@@ -113,5 +113,4 @@ public class LoginTestLogoutPage extends BaseTest{
 
         softAssert.assertAll();
     }
-
 }
