@@ -12,13 +12,13 @@ public class QuitYourAccount {
 
 //----------------------------------------------------------------------------------------------
 
-    @FindBy(id="ybarAccountMenu")
+    @FindBy(xpath="//*[@id=\"ybarAccountMenuOpener\"]/div/img")
     private static WebElement logoOutButton;
     public static WebElement getLogoOutButton() { return logoOutButton;  }
 
 //----------------------------------------------------------------------------------------------
 
-    @FindBy(xpath="//*[@id=\"profile-signout-link\"]/span[2]")
+    @FindBy(xpath = "<span class=\"_yb_ymjg5 _yb_mn376 _yb_sq2hs\">Sign out</span>")
     private static WebElement signOutButton;
     public static WebElement getSignOutButton() { return signOutButton;  }
 

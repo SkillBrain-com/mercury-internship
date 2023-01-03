@@ -11,9 +11,10 @@ public class SignOutPage {
         PageFactory.initElements(driver, this);
     }
     //---------------------------------------------------------------------------------------------------
-    @FindBy( css = "#ybarAccountMenu")
-//  ... xpath="//*[@id=\"ybarAccountMenuOpener\"]/div/img"
+    @FindBy(xpath="//*[@id=\"ybarAccountMenuOpener\"]/div/img" )
+//  ...
 //  ... id="ybarAccountMenu"
+//  ... css = "#ybarAccountMenu"
     private static WebElement logoOutButton;
 
     public static WebElement getLogoOutButton() { return logoOutButton; }
@@ -21,6 +22,8 @@ public class SignOutPage {
     //---------------------------------------------------------------------------------------------------
     @FindBy(xpath="//*[@id=\"profile-signout-link\"]")
 //  ... xpath = "<span class=\"_yb_ymjg5 _yb_mn376 _yb_sq2hs\">Sign out</span>"
+//  ... xpath = "//*[@id="profile-signout-link"]/span[2]"
+//  ... xpath="//*[@id=\"profile-signout-link\"]"
     private static WebElement signOutButton;
 
     public static WebElement getSignOutButton() { return signOutButton; }
