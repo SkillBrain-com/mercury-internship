@@ -16,6 +16,14 @@ public class DriverManager {
 
     }
 
+    public static ChromeDriver getDriver()  {
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
+
+        ChromeDriverManager.chromedriver().setup();
+        return new ChromeDriver();
+    }
 
 
 

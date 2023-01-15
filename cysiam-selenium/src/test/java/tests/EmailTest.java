@@ -1,6 +1,5 @@
 package tests;
 
-
 import driver.DriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -8,29 +7,24 @@ import org.testng.annotations.BeforeMethod;
 import utils.EmailData;
 import utils.TestData;
 
-public class BaseTest {
+public class EmailTest {
 
-// instantiere driverul - facem clasa ChromeDriver
+    // instantiere driverul - facem clasa ChromeDriver
     ChromeDriver driver;
 // utilizam Before si After methode
 
     @BeforeMethod
     public void before(){
-// apelam DRIVER-UL
+
         driver = DriverManager.getChromeDriverByManager();
 
-//  apelam URL-ul pe care dorim sa-l testam
-//  driver.get("https://cysiam-client-docker.azurewebsites.net/auth/sign-in");
-//  sau facem apelare din TestData cu valorile definite acolo
-
-        driver.get(TestData.APP_URL);
-}
+        driver.get(EmailData.APP_URL_EMAIL);
+    }
 
     @AfterMethod
     public void after(){
         if (driver == null){
-         driver.quit();
+            driver.quit();
         }
     }
-
 }
