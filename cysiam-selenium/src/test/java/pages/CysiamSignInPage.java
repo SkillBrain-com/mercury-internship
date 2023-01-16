@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CysiamSignInPage {
 
     public CysiamSignInPage (WebDriver driver){
+
         PageFactory.initElements(driver, this);
     }
 
@@ -15,6 +16,8 @@ public class CysiamSignInPage {
     private WebElement signInButton;
 
     public WebElement getSignInButton() {
+
         return signInButton;
     }
+    //
 }

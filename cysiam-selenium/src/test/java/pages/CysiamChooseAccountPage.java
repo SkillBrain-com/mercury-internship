@@ -26,4 +26,5 @@ public class CysiamChooseAccountPage {
     public WebElement getSignInButton() {
         return signInButton;
     }
+    //
 }
