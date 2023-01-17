@@ -1,10 +1,19 @@
 package utils;
 
 public class TestData {
+// definim o clasa de constante pe care sa le accesam cand avem nevoie pentru pagina de CYSIAM
 
-        public static final String APP_URL="https://cysiam-client-docker.azurewebsites.net/";
-        public static final String ADMIN_USERNAME="adminbrain15@test.com";
-        public static final String ADMIN_PASSWORD="Parola12#";
-        //
-    }
+    public final static String APP_URL = "https://cysiam-client-docker.azurewebsites.net/auth/sign-in" ;
 
+    public final static String ADMIN_USERNAME = "adelina_burlacu17@yahoo.com" ;
+
+    public final static String ADMIN_PASSWORD = "47keksC899" ;
+
+    public final static String VERIFY_CODE = "320551" ;
+
+
+
+
+
+
+}
