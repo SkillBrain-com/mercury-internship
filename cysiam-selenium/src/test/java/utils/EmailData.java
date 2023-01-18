@@ -6,9 +6,9 @@ public class EmailData {
 
     public final static String APP_URL_EMAIL = "https://www.yahoo.com" ;
 
-    public final static String EMAIL_USERNAME = "adelina_burlacu17@yahoo.com" ;
+    public final static String EMAIL_USERNAME = "yor email here" ;
 
-    public final static String EMAIL_PASSWORD = "KartophyCoptzi2022" ;
+    public final static String EMAIL_PASSWORD = "your password here" ;
 
 
 }

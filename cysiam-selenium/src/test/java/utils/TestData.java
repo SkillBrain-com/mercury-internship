@@ -5,11 +5,11 @@ public class TestData {
 
     public final static String APP_URL = "https://cysiam-client-docker.azurewebsites.net/auth/sign-in" ;
 
-    public final static String ADMIN_USERNAME = "adelina_burlacu17@yahoo.com" ;
+    public final static String ADMIN_USERNAME = "yor email here" ;
 
-    public final static String ADMIN_PASSWORD = "47keksC899" ;
+    public final static String ADMIN_PASSWORD = "your password here" ;
 
-    public final static String VERIFY_CODE = "320551" ;
+    public final static String VERIFY_CODE = "copy paste code - in lucru" ;
 
 
 
